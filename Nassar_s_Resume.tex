@@ -1,3 +1,4 @@
+% !TeX program = pdflatex
 %-------------------------
 % Resume in Latex
 % Author : Jake Gutierrez
@@ -18,6 +19,7 @@
 \usepackage{fancyhdr}
 \usepackage[english]{babel}
 \usepackage{tabularx}
+\usepackage[version=4]{mhchem}
 \input{glyphtounicode}
 
 
@@ -133,8 +135,9 @@
 {Vinyl Acetate Monomer Plant Design}{Jan. 2026 -- Present}
 {University of Ottawa}{Ottawa, ON}
 \resumeItemListStart
-    \resumeItem{Designed an industrial-scale VAM production facility.}
-    \resumeItem{Conducted literature review and market analysis; used Aspen HYSYS to simulate full process flowsheet.}
+    \resumeItem{Designed and simulated an industrial-scale vinyl acetate monomer production facility.}
+    \resumeItem{Conducted literature review and market analysis.}
+    \resumeItem{Developed full Aspen HYSYS process flowsheet for reactor, heat integration, separation, and recycle streams.}
     \resumeItem{Sized and optimized plug flow reactor (PFR), heat exchanger, and distillation column.}
     \resumeItem{Performed economic feasibility studies and HAZOP safety analysis.}
 \resumeItemListEnd
@@ -151,10 +154,27 @@
 {Reactor Design Project}{Sept. 2025 -- Dec. 2025}
 {University of Ottawa}{Ottawa, ON}
 \resumeItemListStart
-    \resumeItem{Implemented Runge–Kutta–Fehlberg adaptive numerical method in VBA to simulate packed bed reactor (PBR).}
+    \resumeItem{Implemented adaptive Runge–Kutta–Fehlberg (RKF45) numerical method in VBA to simulate packed bed reactor (PBR) behavior.}
     \resumeItem{Optimized reactor performance using Excel-based simulations.}
-    \resumeItem{Authored 15-page technical report and presented findings.}
 \resumeItemListEnd
+
+\resumeSubheading
+{Renewable Methanol Production from \ce{CO2} and Green Hydrogen}{May 2025 -- Aug. 2025}
+{University of Ottawa}{Ottawa, ON}
+\resumeItemListStart
+    \resumeItem{Designed 40,000 tonne/year methanol plant (99.5\% purity) using Aspen Plus.}
+    \resumeItem{Developed full process flowsheet including reactor, separation units, and recycle streams.}
+    \resumeItem{Performed mass and energy balances and preliminary equipment sizing.}
+\resumeItemListEnd
+
+\resumeSubheading
+{Packed Absorption Tower Design and Optimization}{Jan. 2025 -- April. 2025}
+{University of Ottawa}{Ottawa, ON}
+  \resumeItemListStart
+    \resumeItem{Designed and optimized a packed absorption column for 99\% ethanol recovery using HTU/NTU correlations.}
+    \resumeItem{Selected packing type/size; determined column diameter and height.}
+    \resumeItem{Evaluated pressure drop, cost, and operating conditions via Excel-based simulator.}
+  \resumeItemListEnd
 
 \resumeSubHeadingListEnd
 
@@ -164,21 +184,19 @@
 
 \resumeSubheading
 {Stable Marriage Resident Matching Service}{Jan. 2026 -- Present}
-{Java, Golang, Scheme, Prolog}{}
+{Java, Golang, Scheme, Prolog}{Ottawa, ON}
 \resumeItemListStart
     \resumeItem{Implemented Gale–Shapley stable matching algorithm for medical resident allocation.}
-    \resumeItem{Validated correctness and stability through extensive test cases and edge scenarios.}
+    \resumeItem{Validated correctness through edge-case and stress testing.}
 \resumeItemListEnd
 
 \resumeSubheading
 {LocalLoop – Community Events Android Application}{May 2025 -- Aug. 2025}
-{Android Studio, Java, Firebase, GitHub}{}
+{Android Studio, Java, Firebase, GitHub}{Ottawa, ON}
 \resumeItemListStart
     \resumeItem{Designed and developed Android application for managing and discovering community events.}
     \resumeItem{Implemented role-based access control (Admin, Organizer, Participant).}
     \resumeItem{Enabled event creation, editing, deletion with categories, dates, and fees.}
-    \resumeItem{Applied object-oriented design and modular architecture for scalability.}
-    \resumeItem{Used Git and GitHub for collaborative development and version control.}
 \resumeItemListEnd
 
 \resumeSubHeadingListEnd
@@ -187,9 +205,9 @@
 \section{Technical Skills}
 \begin{itemize}[leftmargin=0.15in, label={}]
 \small{\item{
- \textbf{Simulation Software}: Aspen HYSYS, Altair Embed, UniSim, Aspen Plus \\
+ \textbf{Simulation Software}: Aspen HYSYS, Altair Embed, Aspen Plus \\
  \textbf{Languages}: Java, Python, Golang, Scheme, Prolog, Firebase \\
- \textbf{Developer Tools}: Git, VS Code, Visual Studio, Android Studio, IntelliJ, Eclipse
+ \textbf{Developer Tools}: Git, VS Code, Android Studio, IntelliJ
 }}
 \end{itemize}
 
